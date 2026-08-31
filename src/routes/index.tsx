@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logo from "@/assets/capstone-hs-logo.png.asset.json";
+import mark from "@/assets/capstone-hs-mark.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,13 +114,8 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
         <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
           <a href="#top" className="flex items-center gap-3">
-            <img
-              src={logo.url}
-              alt="Capstone HS Inc."
-              className="h-10 w-auto object-contain object-left"
-              style={{ clipPath: "inset(0 0 36% 36%)", marginLeft: "-2.1rem" }}
-            />
-            <span className="font-display text-lg font-800 tracking-tight text-primary">
+            <img src={mark.url} alt="Capstone HS Inc." className="h-9 w-auto" />
+            <span className="font-display text-lg font-extrabold tracking-tight text-primary">
               Capstone HS <span className="text-steel">Inc.</span>
             </span>
           </a>
@@ -374,12 +369,7 @@ function Index() {
       <footer className="border-t border-border bg-background">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-6 px-6 py-10">
           <div className="flex items-center gap-3">
-            <img
-              src={logo.url}
-              alt="Capstone HS Inc. logo"
-              className="h-8 w-auto object-contain object-left"
-              style={{ clipPath: "inset(0 0 36% 36%)", marginLeft: "-1.7rem" }}
-            />
+            <img src={mark.url} alt="Capstone HS Inc. logo" className="h-7 w-auto" />
             <span className="font-display text-sm font-bold tracking-tight text-primary">
               Capstone HS Inc.
             </span>
