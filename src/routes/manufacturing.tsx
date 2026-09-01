@@ -1,6 +1,26 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
 import { CAPABILITIES, CLIENTS } from "@/lib/site-content";
+import exterior from "@/assets/factory-exterior.jpg.asset.json";
+import office from "@/assets/office.jpg.asset.json";
+import showroom from "@/assets/showroom.jpg.asset.json";
+import sampleRoom from "@/assets/sample-room.jpg.asset.json";
+import sewingLine from "@/assets/sewing-line.jpg.asset.json";
+import assembly from "@/assets/assembly.jpg.asset.json";
+import cutting from "@/assets/cutting-machine.jpg.asset.json";
+import warehouse from "@/assets/warehouse.jpg.asset.json";
+import materials from "@/assets/materials.jpg.asset.json";
+
+const GALLERY = [
+  { src: sewingLine.url, caption: "Sewing line" },
+  { src: assembly.url, caption: "Assembly & finishing" },
+  { src: cutting.url, caption: "Automatic cutting" },
+  { src: sampleRoom.url, caption: "Sample room" },
+  { src: showroom.url, caption: "Showroom" },
+  { src: materials.url, caption: "Material store" },
+  { src: warehouse.url, caption: "Packing & export" },
+  { src: office.url, caption: "Sourcing & QC office" },
+];
 
 export const Route = createFileRoute("/manufacturing")({
   head: () => ({
@@ -31,6 +51,19 @@ function Manufacturing() {
         title="OEM production for sports, outdoor and casual bags."
         intro="We build to your design and your specification. Our focus is OEM — we do not offer ODM programs."
       />
+      <section className="mx-auto max-w-6xl px-6 pt-16">
+        <figure>
+          <img
+            src={exterior.url}
+            alt="Factory exterior"
+            className="aspect-[21/9] w-full object-cover"
+          />
+          <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+            Production facility
+          </figcaption>
+        </figure>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
           {CAPABILITIES.map((c) => (
