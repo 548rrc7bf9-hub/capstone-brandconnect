@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label } from "@/components/site-chrome";
 import { NAV } from "@/lib/site-content";
+import heroPhoto from "@/assets/sewing-line.jpg.asset.json";
+import productsPhoto from "@/assets/products-backpacks.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,11 +40,17 @@ function Index() {
   return (
     <>
       <section className="relative overflow-hidden bg-navy-deep text-primary-foreground">
+        <img
+          src={heroPhoto.url}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+        />
         <div
-          className="pointer-events-none absolute inset-0 opacity-70"
+          className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 20% 15%, color-mix(in oklab, var(--brass) 20%, transparent), transparent 55%)",
+              "linear-gradient(90deg, color-mix(in oklab, var(--navy-deep) 92%, transparent) 0%, color-mix(in oklab, var(--navy-deep) 65%, transparent) 60%, color-mix(in oklab, var(--navy-deep) 35%, transparent) 100%)",
           }}
         />
         <div className="relative mx-auto max-w-6xl px-6 py-28 lg:py-36">
