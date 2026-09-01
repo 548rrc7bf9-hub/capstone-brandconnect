@@ -142,6 +142,31 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 lg:grid-cols-2">
+        <img
+          src={productsPhoto.url}
+          alt="A range of backpacks produced by Capstone HS Inc."
+          loading="lazy"
+          className="w-full bg-paper object-contain p-6"
+        />
+        <div>
+          <Label>Products</Label>
+          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-primary">
+            Backpacks, duffels, shoulder bags and technical carriers.
+          </h2>
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            A selection of programs we have produced for international labels and retail groups —
+            each built to a customer's own design.
+          </p>
+          <Link
+            to="/products"
+            className="mt-8 inline-block border-b border-brass pb-1 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-primary hover:text-brass"
+          >
+            View products
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
