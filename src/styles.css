@@ -74,8 +74,9 @@
   --navy: oklch(0.28 0.185 268);
   --navy-deep: oklch(0.21 0.15 268);
   --steel: oklch(0.56 0.014 250);
-  --brass: oklch(0.66 0.076 76);
-  --brass-soft: oklch(0.76 0.062 76);
+  /* logo gray #686C72 */
+  --brass: oklch(0.53 0.009 260);
+  --brass-soft: oklch(0.72 0.008 260);
   --paper: oklch(0.975 0.003 250);
   --background: oklch(1 0 0);
   --foreground: oklch(0.21 0.02 262);
