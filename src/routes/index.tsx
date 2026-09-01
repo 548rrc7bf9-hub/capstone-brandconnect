@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label } from "@/components/site-chrome";
 import { NAV } from "@/lib/site-content";
+import heroPhoto from "@/assets/sewing-line.jpg.asset.json";
+import productsPhoto from "@/assets/products-backpacks.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,11 +40,17 @@ function Index() {
   return (
     <>
       <section className="relative overflow-hidden bg-navy-deep text-primary-foreground">
+        <img
+          src={heroPhoto.url}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+        />
         <div
-          className="pointer-events-none absolute inset-0 opacity-70"
+          className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 20% 15%, color-mix(in oklab, var(--brass) 20%, transparent), transparent 55%)",
+              "linear-gradient(90deg, color-mix(in oklab, var(--navy-deep) 92%, transparent) 0%, color-mix(in oklab, var(--navy-deep) 65%, transparent) 60%, color-mix(in oklab, var(--navy-deep) 35%, transparent) 100%)",
           }}
         />
         <div className="relative mx-auto max-w-6xl px-6 py-28 lg:py-36">
@@ -132,6 +140,31 @@ function Index() {
               View licensing
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 lg:grid-cols-2">
+        <img
+          src={productsPhoto.url}
+          alt="A range of backpacks produced by Capstone HS Inc."
+          loading="lazy"
+          className="w-full bg-paper object-contain p-6"
+        />
+        <div>
+          <Label>Products</Label>
+          <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-primary">
+            Backpacks, duffels, shoulder bags and technical carriers.
+          </h2>
+          <p className="mt-5 leading-relaxed text-muted-foreground">
+            A selection of programs we have produced for international labels and retail groups —
+            each built to a customer's own design.
+          </p>
+          <Link
+            to="/products"
+            className="mt-8 inline-block border-b border-brass pb-1 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-primary hover:text-brass"
+          >
+            View products
+          </Link>
         </div>
       </section>
     </>
