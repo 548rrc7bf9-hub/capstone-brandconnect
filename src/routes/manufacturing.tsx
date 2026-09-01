@@ -75,7 +75,26 @@ function Manufacturing() {
           ))}
         </div>
 
-        <div className="mt-16 border-t border-border pt-10">
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Inside the operation</Label>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {GALLERY.map((g) => (
+              <figure key={g.caption}>
+                <img
+                  src={g.src}
+                  alt={g.caption}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  {g.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
           <Label>Labels we have produced for</Label>
           <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
             {CLIENTS.map((client) => (
