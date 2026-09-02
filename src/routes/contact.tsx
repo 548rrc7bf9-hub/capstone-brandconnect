@@ -35,7 +35,7 @@ function Contact() {
           </p>
           <a
             href="mailto:info@capstonehs.net"
-            className="font-display text-xl font-bold text-primary underline decoration-brass decoration-2 underline-offset-4 transition-colors hover:text-sbprc"
+            className="font-display text-xl font-bold text-primary underline decoration-brass decoration-2 underline-offset-4 transition-colors hover:text-steel"
           >
             info@capstonehs.net
           </a>
