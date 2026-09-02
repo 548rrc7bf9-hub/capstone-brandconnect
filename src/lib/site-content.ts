@@ -74,12 +74,15 @@ export const CAPABILITIES = [
 ];
 
 export const CLIENTS = [
-  "Oakley",
+  "Hervé Chapelier",
+  "Stone Island",
+  "Spider Korea",
+  "Bushnell",
+  "hummel",
   "OUTDOOR Products",
   "Liberty Mountain",
   "AmeriBag",
   "Singing Rock",
-  "Shinsegae / E-mart",
 ];
 
 export const OFFICES = [
