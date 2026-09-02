@@ -35,14 +35,16 @@ function Licensing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="rounded-lg bg-primary-foreground p-10 text-foreground sm:p-14">
             <Label>Current license</Label>
-            <img
-              src={sbprc.url}
-              alt="Santa Barbara Polo & Racquet Club logo"
-              className="mt-8 w-full max-w-md"
-            />
-            <h2 className="mt-8 font-display text-3xl font-bold leading-tight text-sbprc">
-              Santa Barbara Polo &amp; Racquet Club
-            </h2>
+            <div className="mt-8 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <h2 className="font-display text-3xl font-bold leading-tight">
+                Santa Barbara Polo &amp; Racquet Club
+              </h2>
+              <img
+                src={sbprc.url}
+                alt="Santa Barbara Polo & Racquet Club logo"
+                className="h-auto w-full max-w-[140px] shrink-0"
+              />
+            </div>
             <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
               Capstone HS Inc. holds the exclusive licensing agentship for SBPRC across Korea and
               Vietnam, in partnership with Interasia &amp; Associates.
