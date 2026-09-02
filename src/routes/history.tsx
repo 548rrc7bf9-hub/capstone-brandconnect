@@ -75,6 +75,32 @@ function History() {
             </li>
           ))}
         </ol>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Archive — Qingdao, China</Label>
+          <h2 className="mt-4 max-w-2xl font-display text-2xl font-bold text-primary">
+            HanSei MFG. Corp., Qingdao.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+            Opened in 2002 as our fourth own-operated facility. These photographs are from the
+            plant's opening and its years in full production.
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {ARCHIVE.map((a) => (
+              <figure key={a.caption}>
+                <img
+                  src={a.src}
+                  alt={a.caption}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  {a.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
