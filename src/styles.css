@@ -24,6 +24,7 @@
   --color-navy: var(--navy);
   --color-navy-deep: var(--navy-deep);
   --color-steel: var(--steel);
+  --color-sbprc: var(--sbprc);
   --color-brass: var(--brass);
   --color-brass-soft: var(--brass-soft);
   --color-paper: var(--paper);
@@ -74,6 +75,8 @@
   --navy: oklch(0.28 0.185 268);
   --navy-deep: oklch(0.21 0.15 268);
   --steel: oklch(0.56 0.014 250);
+  /* SBPRC brand green #1F4A25 */
+  --sbprc: oklch(0.36 0.085 145);
   /* logo gray #686C72 */
   --brass: oklch(0.53 0.009 260);
   --brass-soft: oklch(0.72 0.008 260);
