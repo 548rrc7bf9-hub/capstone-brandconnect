@@ -35,20 +35,22 @@ function Licensing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="rounded-lg bg-primary-foreground p-10 text-foreground sm:p-14">
             <Label>Current license</Label>
-            <div className="mt-8 flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
-              <h2 className="font-display text-3xl font-bold leading-tight">
-                Santa Barbara Polo &amp; Racquet Club
-              </h2>
+            <div className="mt-8 flex flex-col items-start gap-8 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex-1">
+                <h2 className="font-display text-3xl font-bold leading-tight text-navy-deep">
+                  Santa Barbara Polo &amp; Racquet Club
+                </h2>
+                <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+                  Capstone HS Inc. holds the exclusive licensing agentship for SBPRC across Korea and
+                  Vietnam, in partnership with Interasia &amp; Associates.
+                </p>
+              </div>
               <img
                 src={sbprc.url}
                 alt="Santa Barbara Polo & Racquet Club logo"
-                className="h-auto w-full max-w-[140px] shrink-0"
+                className="h-auto w-full max-w-[200px] shrink-0"
               />
             </div>
-            <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
-              Capstone HS Inc. holds the exclusive licensing agentship for SBPRC across Korea and
-              Vietnam, in partnership with Interasia &amp; Associates.
-            </p>
             <div className="mt-8 flex flex-wrap gap-3">
               {["Korea", "Vietnam", "In partnership with Interasia & Associates"].map((tag) => (
                 <span
