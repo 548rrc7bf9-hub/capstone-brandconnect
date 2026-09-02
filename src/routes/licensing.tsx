@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
+import sbprc from "@/assets/sbprc-logo.png.asset.json";
 
 export const Route = createFileRoute("/licensing")({
   head: () => ({
@@ -34,7 +35,12 @@ function Licensing() {
         <div className="mx-auto max-w-6xl px-6">
           <div className="rounded-lg bg-primary-foreground p-10 text-foreground sm:p-14">
             <Label>Current license</Label>
-            <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-primary">
+            <img
+              src={sbprc.url}
+              alt="Santa Barbara Polo & Racquet Club logo"
+              className="mt-8 w-full max-w-md"
+            />
+            <h2 className="mt-8 font-display text-3xl font-bold leading-tight text-sbprc">
               Santa Barbara Polo &amp; Racquet Club
             </h2>
             <p className="mt-5 max-w-2xl leading-relaxed text-muted-foreground">
