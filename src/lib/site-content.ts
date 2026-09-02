@@ -2,6 +2,7 @@ export const NAV = [
   { label: "About", to: "/about" },
   { label: "Manufacturing", to: "/manufacturing" },
   { label: "Products", to: "/products" },
+  { label: "Gallery", to: "/gallery" },
   { label: "Licensing", to: "/licensing" },
   { label: "History", to: "/history" },
   { label: "Contact", to: "/contact" },
@@ -74,12 +75,15 @@ export const CAPABILITIES = [
 ];
 
 export const CLIENTS = [
-  "Oakley",
+  "Hervé Chapelier",
+  "Stone Island",
+  "Spider Korea",
+  "Bushnell",
+  "hummel",
   "OUTDOOR Products",
   "Liberty Mountain",
   "AmeriBag",
   "Singing Rock",
-  "Shinsegae / E-mart",
 ];
 
 export const OFFICES = [
