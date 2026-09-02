@@ -1,6 +1,32 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHead } from "@/components/site-chrome";
+import { PageHead, Label } from "@/components/site-chrome";
 import { TIMELINE } from "@/lib/site-content";
+import gate from "@/assets/china-img_2807.jpg.asset.json";
+import yard from "@/assets/china-img_2808.jpg.asset.json";
+import lobby from "@/assets/china-img_2809.jpg.asset.json";
+import speech from "@/assets/china-img_2810.jpg.asset.json";
+import floor1 from "@/assets/china-img_2812.jpg.asset.json";
+import floor2 from "@/assets/china-img_2813.jpg.asset.json";
+import floor3 from "@/assets/china-img_2814.jpg.asset.json";
+import floor4 from "@/assets/china-img_2815.jpg.asset.json";
+import opening from "@/assets/china-img_2816.jpg.asset.json";
+import aerial from "@/assets/china-img_2817.jpg.asset.json";
+
+const ARCHIVE = [
+  { src: gate.url, caption: "HanSei MFG. Corp., Qingdao — main gate" },
+  { src: opening.url, caption: "Opening day, Qingdao" },
+  {
+    src: speech.url,
+    caption: "Opening ceremony — the chairman's address",
+  },
+  { src: yard.url, caption: "Plant yard" },
+  { src: aerial.url, caption: "The site from above" },
+  { src: lobby.url, caption: "Reception" },
+  { src: floor1.url, caption: "Finishing tables" },
+  { src: floor2.url, caption: "Sewing floor" },
+  { src: floor3.url, caption: "Main production hall" },
+  { src: floor4.url, caption: "Line in operation" },
+];
 
 export const Route = createFileRoute("/history")({
   head: () => ({
