@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-6">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src={mark.url} alt="Capstone HS Inc." className="h-9 w-auto" />
-          <span className="font-display text-lg font-extrabold tracking-tight text-primary">
+          <span className="font-display text-lg font-extrabold tracking-tight text-brass">
             Capstone HS <span className="text-brass">Inc.</span>
           </span>
         </Link>
