@@ -104,6 +104,17 @@ function Manufacturing() {
             ))}
           </ul>
         </div>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Retail & licensee programs</Label>
+          <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              In Korea we supplied OUTDOOR bags to ABC Mart as a licensee. In the United States, we
+              produced for OUTDOOR Products and Fieldline — with finished goods reaching Walmart
+              shelves through those brand partners.
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );

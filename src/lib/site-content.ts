@@ -84,6 +84,9 @@ export const CLIENTS = [
   "Liberty Mountain",
   "AmeriBag",
   "Singing Rock",
+  "Bass Pro Shop",
+  "Case Logic",
+  "Fieldline",
 ];
 
 export const OFFICES = [
