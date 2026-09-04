@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
-import { cn } from "@/lib/utils";
 import logoBassPro from "@/assets/logo-basspro.png.asset.json";
 import logoBushnell from "@/assets/logo-bushnell.png.asset.json";
 import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
