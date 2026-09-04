@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
-import { cn } from "@/lib/utils";
 import logoBassPro from "@/assets/logo-basspro.png.asset.json";
 import logoBushnell from "@/assets/logo-bushnell.png.asset.json";
 import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
@@ -62,19 +61,13 @@ function TrustedBy() {
           {TRUSTED_BY.map((brand) => (
             <figure
               key={brand.name}
-              className={cn(
-                "flex aspect-[16/10] items-center justify-center border border-border bg-background p-8",
-                brand.name === "Spyder" && "overflow-visible"
-              )}
+              className="flex aspect-[16/10] items-center justify-center border border-border bg-background p-8"
             >
               <img
                 src={brand.src}
                 alt={`${brand.name} logo`}
                 loading="lazy"
-                className={cn(
-                  "h-full w-full object-contain",
-                  brand.name === "Spyder" && "scale-150"
-                )}
+                className="h-full w-full object-contain"
               />
             </figure>
           ))}
