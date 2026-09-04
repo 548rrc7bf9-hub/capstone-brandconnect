@@ -41,8 +41,20 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-9 md:flex">
           {NAV.map((item) => {
             const active = isItemActive(location.pathname, item);
+            const expanded = openDropdown === item.label;
             return (
-              <div key={item.label} className="group relative">
+              <div
+                key={item.label}
+                className="relative"
+                onMouseEnter={() => item.children && setOpenDropdown(item.label)}
+                onMouseLeave={() => setOpenDropdown((current) => current === item.label ? null : current)}
+                onFocusCapture={() => item.children && setOpenDropdown(item.label)}
+                onBlurCapture={(e) => {
+                  if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                    setOpenDropdown((current) => current === item.label ? null : current);
+                  }
+                }}
+              >
                 <Link
                   to={item.to}
                   className={cn(
@@ -53,8 +65,8 @@ export function SiteHeader() {
                   {item.label}
                   {item.children && <ChevronDown className="h-3.5 w-3.5 opacity-60" />}
                 </Link>
-                {item.children && (
-                  <div className="invisible absolute left-0 top-full z-50 min-w-[220px] pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                {item.children && expanded && (
+                  <div className="absolute left-0 top-full z-50 min-w-[220px] pt-3 animate-in fade-in slide-in-from-top-1 duration-150">
                     <div className="overflow-hidden border border-border bg-background shadow-lg">
                       {item.children.map((child) => (
                         <Link
