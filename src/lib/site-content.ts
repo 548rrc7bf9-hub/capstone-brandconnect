@@ -66,7 +66,7 @@ export const TIMELINE = [
   {
     year: "Today",
     title: "Torrance & Ho Chi Minh City",
-    body: "Manufacturing runs through trusted subcontract factories, with sourcing, development and quality control managed directly by our own team.",
+    body: "As an OEM supplier, sourcing, development and quality control remain with our own team, with cut-make-trim production carried out by trusted partner factories.",
   },
 ];
 
@@ -79,7 +79,7 @@ export const CAPABILITIES = [
   {
     n: "02",
     title: "OEM Production",
-    body: "Sports, outdoor and casual bags built to your specification through vetted subcontract factories.",
+    body: "Sports, outdoor and casual bags built to your specification, with cut-make-trim production carried out by vetted partner factories under our direction.",
   },
   {
     n: "03",

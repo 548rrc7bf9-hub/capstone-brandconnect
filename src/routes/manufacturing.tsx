@@ -43,7 +43,7 @@ function Manufacturing() {
       <PageHead
         eyebrow="Manufacturing"
         title="OEM production for sports, outdoor and casual bags."
-        intro="We build to your design and your specification. Our focus is OEM — we do not offer ODM programs."
+        intro="We build to your design and specification. As an OEM supplier, we control sourcing, development and quality in-house, with cut-make-trim production carried out by vetted partner factories. We do not offer ODM programs."
       />
       <section className="mx-auto max-w-6xl px-6 pt-16">
         <figure>
@@ -53,7 +53,7 @@ function Manufacturing() {
             className="aspect-[21/9] w-full object-cover"
           />
           <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-            Production facility
+            CMT production partner
           </figcaption>
         </figure>
       </section>
@@ -67,6 +67,18 @@ function Manufacturing() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{c.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Our model</Label>
+          <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              We are the OEM supplier, not the factory. Every raw material is sourced and specified
+              by our team, and every BOM and costing decision is made in-house. We place CMT orders
+              with partner factories we have vetted and worked with for years, then manage quality
+              control, timelines and export directly.
+            </p>
+          </div>
         </div>
 
         <div className="mt-20 border-t border-border pt-12">

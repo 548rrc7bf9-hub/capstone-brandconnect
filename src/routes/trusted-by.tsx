@@ -31,16 +31,16 @@ const TRUSTED_BY = [
 export const Route = createFileRoute("/trusted-by")({
   head: () => ({
     meta: [
-      { title: "Trusted by — Capstone HS Inc." },
+      { title: "Brands We've Manufactured For — Capstone HS Inc." },
       {
         name: "description",
         content:
-          "Brands and partners that have trusted Capstone HS Inc. with OEM bag manufacturing.",
+          "Brands that have trusted Capstone HS Inc. with OEM bag manufacturing.",
       },
-      { property: "og:title", content: "Trusted by — Capstone HS Inc." },
+      { property: "og:title", content: "Brands We've Manufactured For — Capstone HS Inc." },
       {
         property: "og:description",
-        content: "Brands and partners that have trusted Capstone HS Inc. with OEM bag manufacturing.",
+        content: "Long-standing manufacturing relationships with recognized labels across sports, outdoor and lifestyle.",
       },
       { property: "og:url", content: "/trusted-by" },
     ],
@@ -54,11 +54,11 @@ function TrustedBy() {
     <>
       <PageHead
         eyebrow="Trusted by"
-        title="Brands we have produced for."
-        intro="Long-standing partnerships with recognized labels across sports, outdoor and lifestyle."
+        title="Brands we've manufactured for."
+        intro="Long-standing manufacturing relationships with recognized labels across sports, outdoor and lifestyle."
       />
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <Label>Brand partners</Label>
+        <Label>Brands we've manufactured for</Label>
         <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
           {TRUSTED_BY.map((brand) => (
             <figure
