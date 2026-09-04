@@ -109,7 +109,7 @@ function Manufacturing() {
           </div>
         </div>
 
-        <div className="mt-20 border-t border-border pt-12">
+        <div id="trusted-by" className="mt-20 border-t border-border pt-12">
           <Label>Trusted by</Label>
           <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
             {TRUSTED_BY.map((brand) => (
