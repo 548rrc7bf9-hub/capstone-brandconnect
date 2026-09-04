@@ -70,7 +70,7 @@ export function PageHead({
 }: {
   eyebrow: string;
   title: ReactNode;
-  intro?: string;
+  intro?: ReactNode;
 }) {
   return (
     <section className="border-b border-border bg-paper">
