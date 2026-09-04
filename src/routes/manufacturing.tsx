@@ -109,24 +109,6 @@ function Manufacturing() {
           </div>
         </div>
 
-        <div id="trusted-by" className="mt-20 border-t border-border pt-12">
-          <Label>Trusted by</Label>
-          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
-            {TRUSTED_BY.map((brand) => (
-              <figure
-                key={brand.name}
-                className="flex aspect-[16/10] items-center justify-center border border-border bg-background p-8"
-              >
-                <img
-                  src={brand.src}
-                  alt={`${brand.name} logo`}
-                  loading="lazy"
-                  className="h-full w-full object-contain"
-                />
-              </figure>
-            ))}
-          </div>
-        </div>
 
         <div className="mt-20 border-t border-border pt-12">
           <Label>Retail & licensee programs</Label>

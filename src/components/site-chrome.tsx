@@ -55,7 +55,7 @@ export function SiteHeader() {
                 </Link>
                 {item.children && (
                   <div className="invisible absolute left-0 top-full z-50 min-w-[220px] pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-                    <div className="overflow-hidden rounded-md border border-border bg-background shadow-lg">
+                    <div className="overflow-hidden border border-border bg-background shadow-lg">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}
