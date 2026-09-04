@@ -1,7 +1,9 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
+import { ChevronDown } from "lucide-react";
 import mark from "@/assets/capstone-hs-mark.png.asset.json";
-import { NAV } from "@/lib/site-content";
+import { NAV, type NavItem } from "@/lib/site-content";
+import { cn } from "@/lib/utils";
 
 export function Label({ children }: { children: ReactNode }) {
   return (
@@ -9,8 +11,22 @@ export function Label({ children }: { children: ReactNode }) {
   );
 }
 
+function stripHash(to: string) {
+  const hashIndex = to.indexOf("#");
+  return hashIndex === -1 ? to : to.slice(0, hashIndex);
+}
+
+function isItemActive(pathname: string, item: NavItem) {
+  if (pathname === stripHash(item.to)) return true;
+  if (item.children) {
+    return item.children.some((child) => pathname === stripHash(child.to));
+  }
+  return false;
+}
+
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
@@ -23,16 +39,39 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
-          {NAV.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className="relative py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-steel transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-full after:border-b after:border-brass after:transition-all hover:after:right-0"
-              activeProps={{ className: "text-primary after:right-0" }}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {NAV.map((item) => {
+            const active = isItemActive(location.pathname, item);
+            return (
+              <div key={item.label} className="group relative">
+                <Link
+                  to={item.to}
+                  className={cn(
+                    "relative flex items-center gap-1 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] transition-colors after:absolute after:bottom-0 after:left-0 after:right-full after:border-b after:border-brass after:transition-all hover:text-primary hover:after:right-0",
+                    active ? "text-primary after:right-0" : "text-steel"
+                  )}
+                >
+                  {item.label}
+                  {item.children && <ChevronDown className="h-3.5 w-3.5 opacity-60" />}
+                </Link>
+                {item.children && (
+                  <div className="invisible absolute left-0 top-full z-50 min-w-[220px] pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                    <div className="overflow-hidden rounded-md border border-border bg-background shadow-lg">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.label}
+                          to={child.to}
+                          className="block border-b border-border px-5 py-3 text-[12px] font-medium tracking-wide text-steel transition-colors hover:bg-paper hover:text-primary last:border-b-0"
+                          activeProps={{ className: "bg-paper text-primary" }}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </nav>
 
         <button
@@ -47,19 +86,65 @@ export function SiteHeader() {
       {open && (
         <nav className="border-t border-border bg-background px-6 pb-4 md:hidden">
           {NAV.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              onClick={() => setOpen(false)}
-              className="block border-b border-secondary py-3.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-steel"
-              activeProps={{ className: "text-primary" }}
-            >
-              {item.label}
-            </Link>
+            <MobileNavItem key={item.label} item={item} onNavigate={() => setOpen(false)} />
           ))}
         </nav>
       )}
     </header>
+  );
+}
+
+function MobileNavItem({ item, onNavigate }: { item: NavItem; onNavigate: () => void }) {
+  const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+  const active = isItemActive(location.pathname, item);
+
+  if (!item.children) {
+    return (
+      <Link
+        to={item.to}
+        onClick={onNavigate}
+        className={cn(
+          "block border-b border-secondary py-3.5 text-[11.5px] font-semibold uppercase tracking-[0.2em]",
+          active ? "text-primary" : "text-steel"
+        )}
+        activeProps={{ className: "text-primary" }}
+      >
+        {item.label}
+      </Link>
+    );
+  }
+
+  return (
+    <div className="border-b border-secondary">
+      <button
+        onClick={() => setExpanded((v) => !v)}
+        className={cn(
+          "flex w-full items-center justify-between py-3.5 text-[11.5px] font-semibold uppercase tracking-[0.2em]",
+          active ? "text-primary" : "text-steel"
+        )}
+      >
+        {item.label}
+        <ChevronDown
+          className={cn("h-4 w-4 transition-transform", expanded && "rotate-180")}
+        />
+      </button>
+      {expanded && (
+        <div className="pb-3 pl-4">
+          {item.children.map((child) => (
+            <Link
+              key={child.label}
+              to={child.to}
+              onClick={onNavigate}
+              className="block py-2.5 text-[12px] font-medium tracking-wide text-steel transition-colors hover:text-primary"
+              activeProps={{ className: "text-primary" }}
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -88,6 +173,8 @@ export function PageHead({
 }
 
 export function SiteFooter() {
+  const location = useLocation();
+
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-6 px-6 py-10">
@@ -100,9 +187,12 @@ export function SiteFooter() {
         <nav className="flex flex-wrap gap-x-7 gap-y-2">
           {NAV.map((item) => (
             <Link
-              key={item.to}
+              key={item.label}
               to={item.to}
-              className="text-[11px] font-semibold uppercase tracking-[0.18em] text-steel transition-colors hover:text-primary"
+              className={cn(
+                "text-[11px] font-semibold uppercase tracking-[0.18em] transition-colors hover:text-primary",
+                isItemActive(location.pathname, item) ? "text-primary" : "text-steel"
+              )}
             >
               {item.label}
             </Link>
