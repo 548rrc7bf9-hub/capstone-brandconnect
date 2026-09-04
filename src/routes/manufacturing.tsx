@@ -98,7 +98,7 @@ function Manufacturing() {
           <Label>Labels we have produced for</Label>
           <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
             {CLIENTS.map((client) => (
-              <li key={client} className="font-display text-lg font-semibold text-muted-foreground">
+              <li key={client} className="font-display text-lg font-semibold text-primary">
                 {client}
               </li>
             ))}
@@ -107,7 +107,7 @@ function Manufacturing() {
 
         <div className="mt-20 border-t border-border pt-12">
           <Label>Retail & licensee programs</Label>
-          <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
+          <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-primary">
             <p>
               In Korea, we supplied OUTDOOR PRODUCTS bags to ABC Mart as a licensee. In the United
               States, we produced for OUTDOOR PRODUCTS and FieldLine, with finished goods reaching
