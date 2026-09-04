@@ -62,9 +62,10 @@ function Index() {
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-relaxed text-primary-foreground/70">
             Capstone HS Inc. is a Torrance, California based company operating at the intersection
-            of manufacturing and brand licensing. For decades our team has produced sports, outdoor
-            and casual bags through OEM/ODM manufacturing, working with recognized international labels
-            along the way — and we continue that work today.
+            of manufacturing and brand licensing. For decades, our team has produced sports, outdoor
+            and casual bags through OEM/ODM manufacturing for recognized international labels. Today we
+            operate as an OEM supplier: we source materials and manage specifications in-house, with
+            cut-make-trim production carried out at trusted partner factories under our direction.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
