@@ -86,6 +86,10 @@ function Licensing() {
                 Vietnam, we bridge brand owners, factories, and retail partners so every license is
                 managed with accountability from start to finish.
               </p>
+              <p>
+                Beyond licensee management, we support brand owners with local market monitoring and
+                trade enforcement, helping protect licensed rights against unauthorized use.
+              </p>
             </div>
           </div>
         </div>
