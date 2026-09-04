@@ -2,24 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
 import { CAPABILITIES } from "@/lib/site-content";
 import exterior from "@/assets/factory-exterior.jpg.asset.json";
-import office from "@/assets/office.jpg.asset.json";
 import showroom from "@/assets/showroom.jpg.asset.json";
 import sampleRoom from "@/assets/sample-room.jpg.asset.json";
 import sewingLine from "@/assets/sewing-line.jpg.asset.json";
 import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
-import warehouse from "@/assets/warehouse.jpg.asset.json";
-import materials from "@/assets/materials.jpg.asset.json";
 
-const GALLERY = [
-  { src: sewingLine.url, caption: "Sewing line" },
+const MAKING = [
+  { src: sampleRoom.url, caption: "Sample development" },
+  { src: cutting.url, caption: "Cutting" },
+  { src: sewingLine.url, caption: "Sewing" },
   { src: assembly.url, caption: "Assembly & finishing" },
-  { src: cutting.url, caption: "Automatic cutting" },
-  { src: sampleRoom.url, caption: "Sample room" },
   { src: showroom.url, caption: "Showroom" },
-  { src: materials.url, caption: "Material store" },
-  { src: warehouse.url, caption: "Packing & export" },
-  { src: office.url, caption: "Sourcing & QC office" },
 ];
 
 export const Route = createFileRoute("/manufacturing")({
@@ -76,24 +70,23 @@ function Manufacturing() {
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
-          <Label>Inside the operation</Label>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {GALLERY.map((g) => (
-              <figure key={g.caption}>
+          <Label>How it is made</Label>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {MAKING.map((m) => (
+              <figure key={m.caption}>
                 <img
-                  src={g.src}
-                  alt={g.caption}
+                  src={m.src}
+                  alt={m.caption}
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-                  {g.caption}
+                  {m.caption}
                 </figcaption>
               </figure>
             ))}
           </div>
         </div>
-
 
         <div className="mt-20 border-t border-border pt-12">
           <Label>Retail & licensee programs</Label>

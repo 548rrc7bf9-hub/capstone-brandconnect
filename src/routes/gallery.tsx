@@ -7,11 +7,14 @@ import tactical from "@/assets/products-tactical.jpg.asset.json";
 import coolerTote from "@/assets/product-cooler-tote.jpg.asset.json";
 import shinsegaeSet from "@/assets/product-shinsegae-set.jpg.asset.json";
 import coolerBox from "@/assets/product-cooler-box.jpg.asset.json";
+import office from "@/assets/office.jpg.asset.json";
+import showroom from "@/assets/showroom.jpg.asset.json";
+import sampleRoom from "@/assets/sample-room.jpg.asset.json";
 import sewingLine from "@/assets/sewing-line.jpg.asset.json";
 import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
-import sampleRoom from "@/assets/sample-room.jpg.asset.json";
-import showroom from "@/assets/showroom.jpg.asset.json";
+import warehouse from "@/assets/warehouse.jpg.asset.json";
+import materials from "@/assets/materials.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -46,12 +49,15 @@ const WORK = [
   { src: coolerBox.url, caption: "Insulated carrier box" },
 ];
 
-const MAKING = [
-  { src: sampleRoom.url, caption: "Sample development" },
-  { src: cutting.url, caption: "Cutting" },
-  { src: sewingLine.url, caption: "Sewing" },
+const OPERATION = [
+  { src: sewingLine.url, caption: "Sewing line" },
   { src: assembly.url, caption: "Assembly & finishing" },
+  { src: cutting.url, caption: "Automatic cutting" },
+  { src: sampleRoom.url, caption: "Sample room" },
   { src: showroom.url, caption: "Showroom" },
+  { src: materials.url, caption: "Material store" },
+  { src: warehouse.url, caption: "Packing & export" },
+  { src: office.url, caption: "Sourcing & QC office" },
 ];
 
 function Gallery() {
@@ -82,18 +88,18 @@ function Gallery() {
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
-          <Label>How it is made</Label>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {MAKING.map((m) => (
-              <figure key={m.caption}>
+          <Label>Inside the operation</Label>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {OPERATION.map((g) => (
+              <figure key={g.caption}>
                 <img
-                  src={m.src}
-                  alt={m.caption}
+                  src={g.src}
+                  alt={g.caption}
                   loading="lazy"
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-                  {m.caption}
+                  {g.caption}
                 </figcaption>
               </figure>
             ))}
