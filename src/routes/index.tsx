@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label } from "@/components/site-chrome";
+import { cn } from "@/lib/utils";
 import { NAV } from "@/lib/site-content";
 import heroPhoto from "@/assets/sewing-line.jpg.asset.json";
 import productsPhoto from "@/assets/products-backpacks.jpg.asset.json";
