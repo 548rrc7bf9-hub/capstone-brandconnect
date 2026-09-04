@@ -65,18 +65,6 @@ function Licensing() {
         </div>
       </section>
 
-      <section className="bg-background py-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="rounded-lg border border-border bg-card p-8 sm:p-10">
-            <Label>Past Licensing Experience</Label>
-            <p className="mt-5 max-w-3xl leading-relaxed text-muted-foreground">
-              Prior to our current licensing agentship, Capstone HS Inc. previously held an exclusive
-              licensee agreement for the OUTDOOR PRODUCTS brand in Korea (from 2008), supplying bags to
-              retail partners including ABC Mart Korea.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
