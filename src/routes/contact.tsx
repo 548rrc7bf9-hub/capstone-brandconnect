@@ -31,7 +31,7 @@ function Contact() {
             For inquiries, reach us at{" "}
             <a
               href="mailto:info@capstonehs.net"
-              className="font-semibold text-primary underline decoration-steel decoration-2 underline-offset-4 transition-colors hover:text-steel"
+              className="font-semibold text-muted-foreground underline decoration-steel decoration-2 underline-offset-4 transition-colors hover:text-steel"
             >
               info@capstonehs.net
             </a>
