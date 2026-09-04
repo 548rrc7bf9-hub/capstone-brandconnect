@@ -10,21 +10,6 @@ import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
-import logoBassPro from "@/assets/logo-basspro.png.asset.json";
-import logoLibertyMountain from "@/assets/logo-liberty-mountain.webp.asset.json";
-import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
-import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
-import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
-import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
-
-const TRUSTED_BY = [
-  { src: logoBassPro.url, name: "Bass Pro Shops" },
-  { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
-  { src: logoStoneIsland.url, name: "Stone Island" },
-  { src: logoCaseLogic.url, name: "Case Logic" },
-  { src: logoLibertyMountain.url, name: "Liberty Mountain" },
-  { src: logoSingingRock.url, name: "Singing Rock" },
-];
 
 const GALLERY = [
   { src: sewingLine.url, caption: "Sewing line" },
@@ -109,24 +94,6 @@ function Manufacturing() {
           </div>
         </div>
 
-        <div id="trusted-by" className="mt-20 border-t border-border pt-12">
-          <Label>Trusted by</Label>
-          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
-            {TRUSTED_BY.map((brand) => (
-              <figure
-                key={brand.name}
-                className="flex aspect-[16/10] items-center justify-center border border-border bg-background p-8"
-              >
-                <img
-                  src={brand.src}
-                  alt={`${brand.name} logo`}
-                  loading="lazy"
-                  className="h-full w-full object-contain"
-                />
-              </figure>
-            ))}
-          </div>
-        </div>
 
         <div className="mt-20 border-t border-border pt-12">
           <Label>Retail & licensee programs</Label>
