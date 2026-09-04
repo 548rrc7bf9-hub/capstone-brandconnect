@@ -11,15 +11,6 @@ import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
 
-const TRUSTED_BY = [
-  { src: logoBassPro.url, name: "Bass Pro Shops" },
-  { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
-  { src: logoStoneIsland.url, name: "Stone Island" },
-  { src: logoCaseLogic.url, name: "Case Logic" },
-  { src: logoLibertyMountain.url, name: "Liberty Mountain" },
-  { src: logoSingingRock.url, name: "Singing Rock" },
-];
-
 const GALLERY = [
   { src: sewingLine.url, caption: "Sewing line" },
   { src: assembly.url, caption: "Assembly & finishing" },
