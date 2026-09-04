@@ -39,12 +39,12 @@ function About() {
           <p>
             Capstone HS Inc. is a Torrance, California based company operating at the intersection
             of manufacturing and brand licensing. For decades our team has produced sports, outdoor
-            and casual bags through OEM manufacturing, working with recognized international labels
+            and casual bags through OEM/ODM manufacturing, working with recognized international labels
             along the way, and we continue that work today.
           </p>
           <p>
             Alongside manufacturing, we operate as a brand licensing agent, representing global
-            lifestyle brands and holding agentship rights across the Korean and Vietnamese markets.
+            lifestyle brands and serving as the exclusive licensing agent across the Korean and Vietnamese markets.
           </p>
           <p>
             Today we operate as an OEM supplier. We source every raw material, from fabric and thread
