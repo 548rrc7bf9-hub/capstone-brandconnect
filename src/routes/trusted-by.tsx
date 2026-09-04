@@ -12,6 +12,7 @@ import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
 import logoSpyder from "@/assets/logo-spyder.jpg.asset.json";
 import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
 import logoYeah from "@/assets/logo-yeah.jpg.asset.json";
+import logoYakPak from "@/assets/yakpak-logo.webp.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
@@ -26,6 +27,7 @@ const TRUSTED_BY = [
   { src: logoSpyder.url, name: "Spyder" },
   { src: logoFieldline.url, name: "Fieldline" },
   { src: logoYeah.url, name: "Yeah!" },
+  { src: logoYakPak.url, name: "Yak Pak" },
 ];
 
 export const Route = createFileRoute("/trusted-by")({
