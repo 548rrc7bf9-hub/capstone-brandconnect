@@ -16,6 +16,7 @@ import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as HistoryRouteImport } from './routes/history'
 import { Route as LicensingRouteImport } from './routes/licensing'
 import { Route as ManufacturingRouteImport } from './routes/manufacturing'
+import { Route as OperationsRouteImport } from './routes/operations'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as TrustedByRouteImport } from './routes/trusted-by'
 
@@ -54,6 +55,11 @@ const ManufacturingRoute = ManufacturingRouteImport.update({
   path: '/manufacturing',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OperationsRoute = OperationsRouteImport.update({
+  id: '/operations',
+  path: '/operations',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsRoute = ProductsRouteImport.update({
   id: '/products',
   path: '/products',
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
+  '/operations': typeof OperationsRoute
   '/products': typeof ProductsRoute
   '/trusted-by': typeof TrustedByRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
+  '/operations': typeof OperationsRoute
   '/products': typeof ProductsRoute
   '/trusted-by': typeof TrustedByRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
+  '/operations': typeof OperationsRoute
   '/products': typeof ProductsRoute
   '/trusted-by': typeof TrustedByRoute
 }
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/history'
     | '/licensing'
     | '/manufacturing'
+    | '/operations'
     | '/products'
     | '/trusted-by'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/history'
     | '/licensing'
     | '/manufacturing'
+    | '/operations'
     | '/products'
     | '/trusted-by'
   id:
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/history'
     | '/licensing'
     | '/manufacturing'
+    | '/operations'
     | '/products'
     | '/trusted-by'
   fileRoutesById: FileRoutesById
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   HistoryRoute: typeof HistoryRoute
   LicensingRoute: typeof LicensingRoute
   ManufacturingRoute: typeof ManufacturingRoute
+  OperationsRoute: typeof OperationsRoute
   ProductsRoute: typeof ProductsRoute
   TrustedByRoute: typeof TrustedByRoute
 }
@@ -198,6 +211,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ManufacturingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/operations': {
+      id: '/operations'
+      path: '/operations'
+      fullPath: '/operations'
+      preLoaderRoute: typeof OperationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products': {
       id: '/products'
       path: '/products'
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   HistoryRoute: HistoryRoute,
   LicensingRoute: LicensingRoute,
   ManufacturingRoute: ManufacturingRoute,
+  OperationsRoute: OperationsRoute,
   ProductsRoute: ProductsRoute,
   TrustedByRoute: TrustedByRoute,
 }
