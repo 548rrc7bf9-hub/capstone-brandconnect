@@ -11,6 +11,7 @@ import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
 import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
 import logoSpyder from "@/assets/logo-spyder.jpg.asset.json";
 import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
+import logoYeah from "@/assets/logo-yeah.jpg.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
