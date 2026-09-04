@@ -26,6 +26,7 @@ function isItemActive(pathname: string, item: NavItem) {
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const location = useLocation();
 
   return (
