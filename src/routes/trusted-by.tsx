@@ -73,7 +73,7 @@ function TrustedBy() {
                 loading="lazy"
                 className={cn(
                   "h-full w-full object-contain",
-                  brand.name === "Spyder" && "scale-110"
+                  brand.name === "Spyder" && "scale-150"
                 )}
               />
             </figure>
