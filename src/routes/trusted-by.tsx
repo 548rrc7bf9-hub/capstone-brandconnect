@@ -25,6 +25,7 @@ const TRUSTED_BY = [
   { src: logoHummel.url, name: "hummel" },
   { src: logoSpyder.url, name: "Spyder" },
   { src: logoFieldline.url, name: "Fieldline" },
+  { src: logoYeah.url, name: "Yeah!" },
 ];
 
 export const Route = createFileRoute("/trusted-by")({
