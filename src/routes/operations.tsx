@@ -56,7 +56,7 @@ function Operations() {
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Label>Inside the operation</Label>
         <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-          Archive images from our former in-house facilities.
+          Archive images from our former in-house facility in Vietnam.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {OPERATION.map((g) => (
