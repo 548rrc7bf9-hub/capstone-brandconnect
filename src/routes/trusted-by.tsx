@@ -1,11 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
 import logoBassPro from "@/assets/logo-basspro.png.asset.json";
+import logoBushnell from "@/assets/logo-bushnell.png.asset.json";
+import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
+import logoFieldline from "@/assets/logo-fieldline.webp.asset.json";
+import logoHerveChapelier from "@/assets/logo-herve-chapelier.svg.asset.json";
+import logoHummel from "@/assets/logo-hummel.svg.asset.json";
 import logoLibertyMountain from "@/assets/logo-liberty-mountain.webp.asset.json";
 import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
 import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
+import logoSpyder from "@/assets/logo-spyder.jpg.asset.json";
 import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
-import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
@@ -14,6 +19,11 @@ const TRUSTED_BY = [
   { src: logoCaseLogic.url, name: "Case Logic" },
   { src: logoLibertyMountain.url, name: "Liberty Mountain" },
   { src: logoSingingRock.url, name: "Singing Rock" },
+  { src: logoBushnell.url, name: "Bushnell" },
+  { src: logoHerveChapelier.url, name: "Hervé Chapelier" },
+  { src: logoHummel.url, name: "hummel" },
+  { src: logoSpyder.url, name: "Spyder" },
+  { src: logoFieldline.url, name: "Fieldline" },
 ];
 
 export const Route = createFileRoute("/trusted-by")({
