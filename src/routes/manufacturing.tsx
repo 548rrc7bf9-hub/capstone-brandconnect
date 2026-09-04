@@ -98,7 +98,7 @@ function Manufacturing() {
           <Label>Labels we have produced for</Label>
           <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
             {CLIENTS.map((client) => (
-              <li key={client} className="font-display text-lg font-semibold text-primary/70">
+              <li key={client} className="font-display text-lg font-semibold text-muted-foreground">
                 {client}
               </li>
             ))}
