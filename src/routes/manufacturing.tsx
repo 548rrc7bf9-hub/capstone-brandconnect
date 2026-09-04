@@ -111,17 +111,17 @@ function Manufacturing() {
 
         <div className="mt-20 border-t border-border pt-12">
           <Label>Trusted by</Label>
-          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-3">
             {TRUSTED_BY.map((brand) => (
               <figure
                 key={brand.name}
-                className="flex items-center justify-center border border-border bg-background p-6"
+                className="flex aspect-[16/10] items-center justify-center border border-border bg-background p-8"
               >
                 <img
                   src={brand.src}
                   alt={`${brand.name} logo`}
                   loading="lazy"
-                  className="max-h-16 w-auto max-w-full object-contain"
+                  className="h-full w-full object-contain"
                 />
               </figure>
             ))}
