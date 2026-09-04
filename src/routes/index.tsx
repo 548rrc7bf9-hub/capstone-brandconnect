@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Label } from "@/components/site-chrome";
-import { cn } from "@/lib/utils";
 import { NAV } from "@/lib/site-content";
 import heroPhoto from "@/assets/sewing-line.jpg.asset.json";
 import productsPhoto from "@/assets/products-backpacks.jpg.asset.json";
@@ -55,7 +54,7 @@ function Index() {
           }}
         />
         <div className="relative mx-auto max-w-6xl px-6 py-28 lg:py-36">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-brass-soft">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary-foreground/80">
             Established 1987 · Torrance, CA · Ho Chi Minh City
           </p>
           <h1 className="mt-6 max-w-[17ch] font-display text-4xl font-extrabold leading-[1.06] tracking-tight sm:text-5xl lg:text-6xl">
@@ -76,7 +75,7 @@ function Index() {
             </Link>
             <Link
               to="/manufacturing"
-              className="rounded-sm border border-brass px-8 py-4 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-brass-soft transition-colors hover:bg-brass hover:text-primary"
+              className="rounded-sm border border-primary-foreground/55 px-8 py-4 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-primary-foreground transition-colors hover:bg-primary-foreground hover:text-primary"
             >
               Our capabilities
             </Link>
@@ -87,7 +86,7 @@ function Index() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="border-b border-primary-foreground/35 pb-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary-foreground/80 transition-colors hover:border-brass hover:text-primary-foreground"
+                className="border-b border-primary-foreground/35 pb-1 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary-foreground/80 transition-colors hover:border-primary-foreground hover:text-primary-foreground"
               >
                 {item.label}
               </Link>
