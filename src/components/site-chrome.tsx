@@ -67,7 +67,7 @@ export function SiteHeader() {
                   {item.children && <ChevronDown className="h-3.5 w-3.5 opacity-60" />}
                 </Link>
                 {item.children && expanded && (
-                  <div className="absolute left-0 top-full z-50 min-w-[220px] pt-3 animate-in fade-in slide-in-from-top-1 duration-150">
+                  <div className="absolute left-0 top-full z-50 min-w-[220px] pt-3 transition-opacity duration-150">
                     <div className="overflow-hidden border border-border bg-background shadow-lg">
                       {item.children.map((child) => (
                         <Link
