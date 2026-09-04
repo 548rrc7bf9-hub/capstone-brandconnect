@@ -10,12 +10,6 @@ import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
-import logoBassPro from "@/assets/logo-basspro.png.asset.json";
-import logoLibertyMountain from "@/assets/logo-liberty-mountain.webp.asset.json";
-import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
-import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
-import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
-import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
