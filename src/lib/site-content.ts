@@ -1,12 +1,30 @@
-export const NAV = [
-  { label: "About", to: "/about" },
-  { label: "Manufacturing", to: "/manufacturing" },
-  { label: "Products", to: "/products" },
+export type NavItem = {
+  label: string;
+  to: string;
+  children?: { label: string; to: string }[];
+};
+
+export const NAV: NavItem[] = [
+  {
+    label: "About",
+    to: "/about",
+    children: [
+      { label: "Who we are", to: "/about" },
+      { label: "History", to: "/history" },
+    ],
+  },
+  {
+    label: "Manufacturing",
+    to: "/manufacturing",
+    children: [
+      { label: "Products", to: "/products" },
+      { label: "Trusted by", to: "/manufacturing#trusted-by" },
+    ],
+  },
   { label: "Gallery", to: "/gallery" },
   { label: "Licensing", to: "/licensing" },
-  { label: "History", to: "/history" },
   { label: "Contact", to: "/contact" },
-] as const;
+];
 
 export const TIMELINE = [
   {
