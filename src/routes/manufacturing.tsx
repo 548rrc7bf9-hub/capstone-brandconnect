@@ -52,9 +52,6 @@ function Manufacturing() {
             alt="Factory exterior"
             className="aspect-[21/9] w-full object-cover"
           />
-          <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-            CMT production partner
-          </figcaption>
         </figure>
       </section>
 
