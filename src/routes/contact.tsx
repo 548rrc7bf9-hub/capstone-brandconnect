@@ -26,20 +26,20 @@ function Contact() {
       <PageHead
         eyebrow="Contact"
         title="Two offices, one point of contact."
-        intro="For inquiries, reach us at info@capstonehs.net."
+        intro={
+          <>
+            For inquiries, reach us at{" "}
+            <a
+              href="mailto:info@capstonehs.net"
+              className="font-semibold text-primary underline decoration-steel decoration-2 underline-offset-4 transition-colors hover:text-steel"
+            >
+              info@capstonehs.net
+            </a>
+            .
+          </>
+        }
       />
       <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="mb-10 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-border bg-paper px-8 py-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">
-            General inquiries
-          </p>
-          <a
-            href="mailto:info@capstonehs.net"
-            className="font-display text-xl font-bold text-primary underline decoration-brass decoration-2 underline-offset-4 transition-colors hover:text-steel"
-          >
-            info@capstonehs.net
-          </a>
-        </div>
         <div className="grid gap-px border border-border bg-border md:grid-cols-2">
           {OFFICES.map((office) => (
             <div key={office.city} className="bg-background p-10">
