@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
-import { CAPABILITIES, CLIENTS } from "@/lib/site-content";
+import { CAPABILITIES } from "@/lib/site-content";
 import exterior from "@/assets/factory-exterior.jpg.asset.json";
 import office from "@/assets/office.jpg.asset.json";
 import showroom from "@/assets/showroom.jpg.asset.json";
@@ -10,6 +10,21 @@ import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
+import logoBassPro from "@/assets/logo-basspro.png.asset.json";
+import logoLibertyMountain from "@/assets/logo-liberty-mountain.webp.asset.json";
+import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
+import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
+import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
+import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
+
+const TRUSTED_BY = [
+  { src: logoBassPro.url, name: "Bass Pro Shops" },
+  { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
+  { src: logoStoneIsland.url, name: "Stone Island" },
+  { src: logoCaseLogic.url, name: "Case Logic" },
+  { src: logoLibertyMountain.url, name: "Liberty Mountain" },
+  { src: logoSingingRock.url, name: "Singing Rock" },
+];
 
 const GALLERY = [
   { src: sewingLine.url, caption: "Sewing line" },
@@ -95,14 +110,22 @@ function Manufacturing() {
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
-          <Label>Labels we have produced for</Label>
-          <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-4">
-            {CLIENTS.map((client) => (
-              <li key={client} className="font-display text-lg font-semibold text-muted-foreground">
-                {client}
-              </li>
+          <Label>Trusted by</Label>
+          <div className="mt-8 grid grid-cols-2 items-center gap-8 sm:grid-cols-3">
+            {TRUSTED_BY.map((brand) => (
+              <figure
+                key={brand.name}
+                className="flex items-center justify-center border border-border bg-background p-6"
+              >
+                <img
+                  src={brand.src}
+                  alt={`${brand.name} logo`}
+                  loading="lazy"
+                  className="max-h-16 w-auto max-w-full object-contain"
+                />
+              </figure>
             ))}
-          </ul>
+          </div>
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
