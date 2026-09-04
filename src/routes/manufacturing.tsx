@@ -43,7 +43,7 @@ function Manufacturing() {
       <PageHead
         eyebrow="Manufacturing"
         title="OEM production for sports, outdoor and casual bags."
-        intro="We build to your design and your specification. Our focus is OEM — we do not offer ODM programs."
+        intro="We build to your design and specification. As an OEM supplier, we control sourcing, development and quality in-house, with cut-make-trim production carried out by vetted partner factories. We do not offer ODM programs."
       />
       <section className="mx-auto max-w-6xl px-6 pt-16">
         <figure>
@@ -53,7 +53,7 @@ function Manufacturing() {
             className="aspect-[21/9] w-full object-cover"
           />
           <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-            Production facility
+            CMT production partner
           </figcaption>
         </figure>
       </section>

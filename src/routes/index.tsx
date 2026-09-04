@@ -114,8 +114,9 @@ function Index() {
               OEM production for sports, outdoor and casual bags.
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              We build to your design and your specification, through vetted subcontract factories,
-              with sourcing, development and quality control kept in-house.
+              We build to your design and specification. We source all raw materials in-house and
+              control the BOM, specifications and quality, with cut-make-trim production carried out
+              by vetted partner factories under our direction.
             </p>
             <Link
               to="/manufacturing"
