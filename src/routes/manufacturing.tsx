@@ -70,6 +70,18 @@ function Manufacturing() {
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
+          <Label>Our model</Label>
+          <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              We are the OEM supplier, not the factory. Every raw material is sourced and specified
+              by our team, and every BOM and costing decision is made in-house. We place CMT orders
+              with partner factories we have vetted and worked with for years, then manage quality
+              control, timelines and export directly.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
           <Label>How it is made</Label>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {MAKING.map((m) => (
