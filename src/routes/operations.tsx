@@ -14,6 +14,13 @@ import office3 from "@/assets/dsc_0784.jpg.asset.json";
 import office4 from "@/assets/dsc_0785.jpg.asset.json";
 import sampleSewing from "@/assets/dsc_0786.jpg.asset.json";
 import sampleWorkshop from "@/assets/dsc_0787.jpg.asset.json";
+import vnExterior from "@/assets/img_2811.jpg.asset.json";
+import floorOverview from "@/assets/dsc_0822.jpg.asset.json";
+import spreading from "@/assets/dsc_0820.jpg.asset.json";
+import dieCutting from "@/assets/dsc_0821.jpg.asset.json";
+import specialMachines from "@/assets/dsc_0819.jpg.asset.json";
+import sewingRoom from "@/assets/dsc_0823.jpg.asset.json";
+import trimming from "@/assets/dsc_0818.jpg.asset.json";
 
 export const Route = createFileRoute("/operations")({
   head: () => ({
@@ -40,13 +47,20 @@ export const Route = createFileRoute("/operations")({
 });
 
 const OPERATION = [
-  { src: sewingLine.url, caption: "Sewing line" },
-  { src: assembly.url, caption: "Assembly & finishing" },
+  { src: vnExterior.url, caption: "Vietnam facility" },
+  { src: floorOverview.url, caption: "Production floor overview" },
+  { src: spreading.url, caption: "Fabric spreading" },
   { src: cutting.url, caption: "Automatic cutting" },
-  { src: sampleRoom.url, caption: "Sample room" },
-  { src: showroom.url, caption: "Showroom" },
+  { src: dieCutting.url, caption: "Die cutting" },
+  { src: sewingLine.url, caption: "Sewing line" },
+  { src: sewingRoom.url, caption: "Sewing room" },
+  { src: specialMachines.url, caption: "Special machines" },
+  { src: trimming.url, caption: "Trimming & sorting" },
+  { src: assembly.url, caption: "Assembly & finishing" },
   { src: materials.url, caption: "Material store" },
   { src: warehouse.url, caption: "Packing & export" },
+  { src: sampleRoom.url, caption: "Sample room" },
+  { src: showroom.url, caption: "Showroom" },
   { src: office.url, caption: "Sourcing & QC office" },
   { src: office1.url, caption: "Sourcing office" },
   { src: office2.url, caption: "QC & merchandising office" },
@@ -71,8 +85,8 @@ function Operations() {
           Archive images from our former in-house facility in Vietnam.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {OPERATION.map((g) => (
-            <figure key={g.caption}>
+          {OPERATION.map((g, i) => (
+            <figure key={g.caption} className={i < 2 ? "sm:col-span-2" : undefined}>
               <img
                 src={g.src}
                 alt={g.caption}
