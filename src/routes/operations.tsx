@@ -22,7 +22,7 @@ export const Route = createFileRoute("/operations")({
       {
         name: "description",
         content:
-          "Inside the operation at Capstone HS Inc. — sewing lines, automatic cutting, sample room, material store, packing and export, and our sourcing & QC office.",
+          "Inside the operation at Capstone HS Inc. — sewing lines, automatic cutting, sample room, material store, packing and export, and our sample workshop.",
       },
       { property: "og:title", content: "Operations — Capstone HS Inc." },
       {
