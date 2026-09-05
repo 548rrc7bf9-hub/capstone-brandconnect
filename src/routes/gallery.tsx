@@ -7,6 +7,12 @@ import tactical from "@/assets/products-tactical.jpg.asset.json";
 import coolerTote from "@/assets/product-cooler-tote.jpg.asset.json";
 import shinsegaeSet from "@/assets/product-shinsegae-set.jpg.asset.json";
 import coolerBox from "@/assets/product-cooler-box.jpg.asset.json";
+import showroom1 from "@/assets/dsc_0772.jpg.asset.json";
+import showroom2 from "@/assets/dsc_0773.jpg.asset.json";
+import showroom3 from "@/assets/dsc_0774.jpg.asset.json";
+import showroom4 from "@/assets/dsc_0777.jpg.asset.json";
+import showroom5 from "@/assets/dsc_0778.jpg.asset.json";
+import showroom6 from "@/assets/dsc_0780.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -39,6 +45,15 @@ const WORK = [
   { src: coolerTote.url, caption: "Insulated tote set" },
   { src: shinsegaeSet.url, caption: "Retail program set" },
   { src: coolerBox.url, caption: "Insulated carrier box" },
+];
+
+const SHOWROOM = [
+  { src: showroom1.url, caption: "Showroom floor" },
+  { src: showroom2.url, caption: "Meeting room & sample display" },
+  { src: showroom3.url, caption: "Sample display" },
+  { src: showroom4.url, caption: "Product racks" },
+  { src: showroom5.url, caption: "OUTDOOR Products display" },
+  { src: showroom6.url, caption: "Camo program display" },
 ];
 
 
