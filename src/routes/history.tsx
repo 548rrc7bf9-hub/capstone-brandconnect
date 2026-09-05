@@ -5,9 +5,6 @@ import gate from "@/assets/china-img_2807.jpg.asset.json";
 import yard from "@/assets/china-img_2808.jpg.asset.json";
 import lobby from "@/assets/china-img_2809.jpg.asset.json";
 import speech from "@/assets/china-img_2810.jpg.asset.json";
-import floor1 from "@/assets/china-img_2812.jpg.asset.json";
-import floor2 from "@/assets/china-img_2813.jpg.asset.json";
-import floor3 from "@/assets/china-img_2814.jpg.asset.json";
 import floor4 from "@/assets/china-img_2815.jpg.asset.json";
 import opening from "@/assets/china-img_2816.jpg.asset.json";
 import aerial from "@/assets/china-img_2817.jpg.asset.json";
@@ -22,9 +19,6 @@ const ARCHIVE = [
   { src: yard.url, caption: "Plant yard" },
   { src: aerial.url, caption: "The site from above" },
   { src: lobby.url, caption: "Reception" },
-  { src: floor1.url, caption: "Finishing tables" },
-  { src: floor2.url, caption: "Sewing floor" },
-  { src: floor3.url, caption: "Main production hall" },
   { src: floor4.url, caption: "Line in operation" },
 ];
 
