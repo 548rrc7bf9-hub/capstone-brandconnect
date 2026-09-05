@@ -117,6 +117,32 @@ function History() {
             ))}
           </div>
         </div>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Archive — Vietnam showroom</Label>
+          <h2 className="mt-4 max-w-2xl font-display text-2xl font-bold text-primary">
+            The Vietnam years.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+            From our former in-house facility in Vietnam — the showroom where finished programs
+            were displayed before shipment.
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SHOWROOM.map((s) => (
+              <figure key={s.caption}>
+                <img
+                  src={s.src}
+                  alt={s.caption}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  {s.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
