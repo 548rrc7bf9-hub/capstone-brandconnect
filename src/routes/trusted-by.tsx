@@ -11,23 +11,25 @@ import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
 import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
 import logoSpyder from "@/assets/logo-spyder.jpg.asset.json";
 import logoStoneIsland from "@/assets/logo-stone-island.png.asset.json";
+import logoTargus from "@/assets/logo-targus.jpg.asset.json";
 import logoYeah from "@/assets/logo-yeah.jpg.asset.json";
 import logoYakPak from "@/assets/yakpak-logo.webp.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
-  { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
+  { src: logoTargus.url, name: "Targus" },
   { src: logoStoneIsland.url, name: "Stone Island" },
   { src: logoCaseLogic.url, name: "Case Logic" },
-  { src: logoLibertyMountain.url, name: "Liberty Mountain" },
-  { src: logoSingingRock.url, name: "Singing Rock" },
+  { src: logoSpyder.url, name: "Spyder" },
   { src: logoBushnell.url, name: "Bushnell" },
+  { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
+  { src: logoFieldline.url, name: "Fieldline" },
   { src: logoHerveChapelier.url, name: "Hervé Chapelier" },
   { src: logoHummel.url, name: "hummel" },
-  { src: logoSpyder.url, name: "Spyder" },
-  { src: logoFieldline.url, name: "Fieldline" },
-  { src: logoYeah.url, name: "Yeah!" },
+  { src: logoLibertyMountain.url, name: "Liberty Mountain" },
+  { src: logoSingingRock.url, name: "Singing Rock" },
   { src: logoYakPak.url, name: "Yak Pak" },
+  { src: logoYeah.url, name: "Yeah!" },
 ];
 
 export const Route = createFileRoute("/trusted-by")({
