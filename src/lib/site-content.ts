@@ -17,6 +17,7 @@ export const NAV: NavItem[] = [
     label: "Manufacturing",
     to: "/manufacturing",
     children: [
+      { label: "Overview", to: "/manufacturing" },
       { label: "Operations", to: "/operations" },
       { label: "Products", to: "/products" },
       { label: "Trusted by", to: "/trusted-by" },

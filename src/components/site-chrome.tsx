@@ -59,8 +59,8 @@ export function SiteHeader() {
                 <Link
                   to={item.to}
                   className={cn(
-                    "relative flex items-center gap-1 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] transition-colors after:absolute after:bottom-0 after:left-0 after:right-full after:border-b after:border-brass after:transition-all hover:text-primary hover:after:right-0",
-                    active ? "text-primary after:right-0" : "text-steel"
+                    "flex items-center gap-1 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] transition-colors hover:text-primary",
+                    active ? "text-primary" : "text-steel"
                   )}
                 >
                   {item.label}
@@ -68,12 +68,12 @@ export function SiteHeader() {
                 </Link>
                 {item.children && expanded && (
                   <div className="absolute left-0 top-full z-50 min-w-[220px] pt-3 transition-opacity duration-150">
-                    <div className="overflow-hidden border border-border bg-background shadow-lg">
+                    <div className="overflow-hidden border border-border bg-background py-1 shadow-lg">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}
                           to={child.to}
-                          className="block border-b border-border px-5 py-3 text-[12px] font-medium tracking-wide text-steel transition-colors hover:bg-paper hover:text-primary last:border-b-0"
+                          className="block px-5 py-2.5 text-[12px] font-medium tracking-wide text-steel transition-colors hover:bg-paper hover:text-primary"
                           activeProps={{ className: "bg-paper text-primary" }}
                         >
                           {child.label}
