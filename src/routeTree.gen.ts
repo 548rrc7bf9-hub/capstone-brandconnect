@@ -12,7 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as HistoryRouteImport } from './routes/history'
 import { Route as LicensingRouteImport } from './routes/licensing'
 import { Route as ManufacturingRouteImport } from './routes/manufacturing'
@@ -33,11 +32,6 @@ const AboutRoute = AboutRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GalleryRoute = GalleryRouteImport.update({
-  id: '/gallery',
-  path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HistoryRoute = HistoryRouteImport.update({
@@ -75,7 +69,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/gallery': typeof GalleryRoute
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
@@ -87,7 +80,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/gallery': typeof GalleryRoute
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
@@ -100,7 +92,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/gallery': typeof GalleryRoute
   '/history': typeof HistoryRoute
   '/licensing': typeof LicensingRoute
   '/manufacturing': typeof ManufacturingRoute
@@ -114,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/gallery'
     | '/history'
     | '/licensing'
     | '/manufacturing'
@@ -126,7 +116,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/gallery'
     | '/history'
     | '/licensing'
     | '/manufacturing'
@@ -138,7 +127,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/gallery'
     | '/history'
     | '/licensing'
     | '/manufacturing'
@@ -151,7 +139,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  GalleryRoute: typeof GalleryRoute
   HistoryRoute: typeof HistoryRoute
   LicensingRoute: typeof LicensingRoute
   ManufacturingRoute: typeof ManufacturingRoute
@@ -181,13 +168,6 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/gallery': {
-      id: '/gallery'
-      path: '/gallery'
-      fullPath: '/gallery'
-      preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/history': {
@@ -239,7 +219,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  GalleryRoute: GalleryRoute,
   HistoryRoute: HistoryRoute,
   LicensingRoute: LicensingRoute,
   ManufacturingRoute: ManufacturingRoute,
