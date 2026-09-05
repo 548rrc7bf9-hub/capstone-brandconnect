@@ -73,7 +73,7 @@ function TrustedBy() {
                 src={brand.src}
                 alt={`${brand.name} logo`}
                 loading="lazy"
-                className="h-full w-full object-contain"
+                className={`h-full w-full object-contain ${brand.imgClass ?? ""}`}
               />
             </figure>
           ))}
