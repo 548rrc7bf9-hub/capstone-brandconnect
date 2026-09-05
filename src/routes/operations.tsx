@@ -85,8 +85,8 @@ function Operations() {
           Archive images from our former in-house facility in Vietnam.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {OPERATION.map((g) => (
-            <figure key={g.caption}>
+          {OPERATION.map((g, i) => (
+            <figure key={g.caption} className={i < 2 ? "sm:col-span-2" : undefined}>
               <img
                 src={g.src}
                 alt={g.caption}
