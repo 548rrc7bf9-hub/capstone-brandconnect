@@ -17,14 +17,14 @@ import logoYakPak from "@/assets/yakpak-logo.webp.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
-  { src: logoTargus.url, name: "Targus" },
-  { src: logoStoneIsland.url, name: "Stone Island" },
+  { src: logoHerveChapelier.url, name: "Hervé Chapelier" },
+  { src: logoStoneIsland.url, name: "Stone Island", imgClass: "scale-110" },
   { src: logoSpyder.url, name: "Spyder" },
   { src: logoCaseLogic.url, name: "Case Logic" },
   { src: logoBushnell.url, name: "Bushnell" },
   { src: logoFieldline.url, name: "Fieldline" },
   { src: logoOutdoorProducts.url, name: "OUTDOOR Products" },
-  { src: logoHerveChapelier.url, name: "Hervé Chapelier" },
+  { src: logoTargus.url, name: "Targus" },
   { src: logoSingingRock.url, name: "Singing Rock" },
   { src: logoLibertyMountain.url, name: "Liberty Mountain" },
   { src: logoHummel.url, name: "hummel" },
@@ -73,7 +73,7 @@ function TrustedBy() {
                 src={brand.src}
                 alt={`${brand.name} logo`}
                 loading="lazy"
-                className="h-full w-full object-contain"
+                className={`h-full w-full object-contain ${brand.imgClass ?? ""}`}
               />
             </figure>
           ))}
