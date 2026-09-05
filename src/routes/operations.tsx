@@ -14,6 +14,13 @@ import office3 from "@/assets/dsc_0784.jpg.asset.json";
 import office4 from "@/assets/dsc_0785.jpg.asset.json";
 import sampleSewing from "@/assets/dsc_0786.jpg.asset.json";
 import sampleWorkshop from "@/assets/dsc_0787.jpg.asset.json";
+import vnExterior from "@/assets/img_2811.jpg.asset.json";
+import floorOverview from "@/assets/dsc_0822.jpg.asset.json";
+import spreading from "@/assets/dsc_0820.jpg.asset.json";
+import dieCutting from "@/assets/dsc_0821.jpg.asset.json";
+import specialMachines from "@/assets/dsc_0819.jpg.asset.json";
+import sewingRoom from "@/assets/dsc_0823.jpg.asset.json";
+import trimming from "@/assets/dsc_0818.jpg.asset.json";
 
 export const Route = createFileRoute("/operations")({
   head: () => ({
