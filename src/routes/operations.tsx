@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
-import office from "@/assets/office.jpg.asset.json";
 import showroom from "@/assets/showroom.jpg.asset.json";
 import sampleRoom from "@/assets/sample-room.jpg.asset.json";
 import sewingLine from "@/assets/sewing-line.jpg.asset.json";
@@ -8,16 +7,10 @@ import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
-import office1 from "@/assets/dsc_0781.jpg.asset.json";
-import office2 from "@/assets/dsc_0782.jpg.asset.json";
-import office3 from "@/assets/dsc_0784.jpg.asset.json";
-import office4 from "@/assets/dsc_0785.jpg.asset.json";
 import sampleSewing from "@/assets/dsc_0786.jpg.asset.json";
 import sampleWorkshop from "@/assets/dsc_0787.jpg.asset.json";
-import vnExterior from "@/assets/img_2811.jpg.asset.json";
 import floorOverview from "@/assets/dsc_0822.jpg.asset.json";
 import spreading from "@/assets/dsc_0820.jpg.asset.json";
-import dieCutting from "@/assets/dsc_0821.jpg.asset.json";
 import specialMachines from "@/assets/dsc_0819.jpg.asset.json";
 import sewingRoom from "@/assets/dsc_0823.jpg.asset.json";
 import trimming from "@/assets/dsc_0818.jpg.asset.json";
@@ -29,7 +22,7 @@ export const Route = createFileRoute("/operations")({
       {
         name: "description",
         content:
-          "Inside the operation at Capstone HS Inc. — sewing lines, automatic cutting, sample room, material store, packing and export, and our sourcing & QC office.",
+          "Inside the operation at Capstone HS Inc. — sewing lines, automatic cutting, sample room, material store, packing and export, and our sample workshop.",
       },
       { property: "og:title", content: "Operations — Capstone HS Inc." },
       {
@@ -47,25 +40,18 @@ export const Route = createFileRoute("/operations")({
 });
 
 const OPERATION = [
-  { src: vnExterior.url, caption: "Vietnam facility" },
   { src: floorOverview.url, caption: "Production floor overview" },
   { src: spreading.url, caption: "Fabric spreading" },
   { src: cutting.url, caption: "Automatic cutting" },
-  { src: dieCutting.url, caption: "Die cutting" },
   { src: sewingLine.url, caption: "Sewing line" },
   { src: sewingRoom.url, caption: "Sewing room" },
   { src: specialMachines.url, caption: "Special machines" },
-  { src: trimming.url, caption: "Trimming & sorting" },
+  { src: trimming.url, caption: "Shoulder strap padding" },
   { src: assembly.url, caption: "Assembly & finishing" },
   { src: materials.url, caption: "Material store" },
   { src: warehouse.url, caption: "Packing & export" },
   { src: sampleRoom.url, caption: "Sample room" },
   { src: showroom.url, caption: "Showroom" },
-  { src: office.url, caption: "Sourcing & QC office" },
-  { src: office1.url, caption: "Sourcing office" },
-  { src: office2.url, caption: "QC & merchandising office" },
-  { src: office3.url, caption: "Production planning office" },
-  { src: office4.url, caption: "Merchandising office" },
   { src: sampleSewing.url, caption: "Sample sewing" },
   { src: sampleWorkshop.url, caption: "Sample workshop" },
 ];
