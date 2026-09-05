@@ -143,7 +143,7 @@ function Manufacturing() {
           <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
             <p>
               In Korea, we supplied OUTDOOR PRODUCTS bags to ABC Mart as a licensee. In the United
-              States, we produced for OUTDOOR PRODUCTS and FieldLine, with finished goods reaching
+              States, we produced for OUTDOOR PRODUCTS and FIELDLINE, with finished goods reaching
               Walmart shelves through those brand partners.
             </p>
           </div>
