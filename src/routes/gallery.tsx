@@ -7,6 +7,12 @@ import tactical from "@/assets/products-tactical.jpg.asset.json";
 import coolerTote from "@/assets/product-cooler-tote.jpg.asset.json";
 import shinsegaeSet from "@/assets/product-shinsegae-set.jpg.asset.json";
 import coolerBox from "@/assets/product-cooler-box.jpg.asset.json";
+import showroom1 from "@/assets/dsc_0772.jpg.asset.json";
+import showroom2 from "@/assets/dsc_0773.jpg.asset.json";
+import showroom3 from "@/assets/dsc_0774.jpg.asset.json";
+import showroom4 from "@/assets/dsc_0777.jpg.asset.json";
+import showroom5 from "@/assets/dsc_0778.jpg.asset.json";
+import showroom6 from "@/assets/dsc_0780.jpg.asset.json";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -41,6 +47,15 @@ const WORK = [
   { src: coolerBox.url, caption: "Insulated carrier box" },
 ];
 
+const SHOWROOM = [
+  { src: showroom1.url, caption: "Showroom floor" },
+  { src: showroom2.url, caption: "Meeting room & sample display" },
+  { src: showroom3.url, caption: "Sample display" },
+  { src: showroom4.url, caption: "Product racks" },
+  { src: showroom5.url, caption: "OUTDOOR Products display" },
+  { src: showroom6.url, caption: "Camo program display" },
+];
+
 
 function Gallery() {
   return (
@@ -67,6 +82,29 @@ function Gallery() {
               </figcaption>
             </figure>
           ))}
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Vietnam showroom archive</Label>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+            From our former in-house facility in Vietnam — the showroom where finished programs were
+            displayed before shipment.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SHOWROOM.map((s) => (
+              <figure key={s.caption}>
+                <img
+                  src={s.src}
+                  alt={s.caption}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  {s.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
 
         <div className="mt-20 border-t border-border pt-12">

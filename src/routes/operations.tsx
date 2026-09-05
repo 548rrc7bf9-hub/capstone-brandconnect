@@ -8,6 +8,12 @@ import assembly from "@/assets/assembly.jpg.asset.json";
 import cutting from "@/assets/cutting-machine.jpg.asset.json";
 import warehouse from "@/assets/warehouse.jpg.asset.json";
 import materials from "@/assets/materials.jpg.asset.json";
+import office1 from "@/assets/dsc_0781.jpg.asset.json";
+import office2 from "@/assets/dsc_0782.jpg.asset.json";
+import office3 from "@/assets/dsc_0784.jpg.asset.json";
+import office4 from "@/assets/dsc_0785.jpg.asset.json";
+import sampleSewing from "@/assets/dsc_0786.jpg.asset.json";
+import sampleWorkshop from "@/assets/dsc_0787.jpg.asset.json";
 
 export const Route = createFileRoute("/operations")({
   head: () => ({
@@ -42,6 +48,12 @@ const OPERATION = [
   { src: materials.url, caption: "Material store" },
   { src: warehouse.url, caption: "Packing & export" },
   { src: office.url, caption: "Sourcing & QC office" },
+  { src: office1.url, caption: "Sourcing office" },
+  { src: office2.url, caption: "QC & merchandising office" },
+  { src: office3.url, caption: "Production planning office" },
+  { src: office4.url, caption: "Merchandising office" },
+  { src: sampleSewing.url, caption: "Sample sewing" },
+  { src: sampleWorkshop.url, caption: "Sample workshop" },
 ];
 
 function Operations() {
