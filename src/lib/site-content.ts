@@ -22,7 +22,7 @@ export const NAV: NavItem[] = [
       { label: "Trusted by", to: "/trusted-by" },
     ],
   },
-  { label: "Gallery", to: "/gallery" },
+  
   { label: "Licensing", to: "/licensing" },
   { label: "Contact", to: "/contact" },
 ];
