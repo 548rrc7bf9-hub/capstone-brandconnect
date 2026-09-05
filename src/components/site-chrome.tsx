@@ -68,12 +68,12 @@ export function SiteHeader() {
                 </Link>
                 {item.children && expanded && (
                   <div className="absolute left-0 top-full z-50 min-w-[220px] pt-3 transition-opacity duration-150">
-                    <div className="overflow-hidden border border-border bg-background shadow-lg">
+                    <div className="overflow-hidden border border-border bg-background py-1 shadow-lg">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}
                           to={child.to}
-                          className="block border-b border-border px-5 py-3 text-[12px] font-medium tracking-wide text-steel transition-colors hover:bg-paper hover:text-primary last:border-b-0"
+                          className="block px-5 py-2.5 text-[12px] font-medium tracking-wide text-steel transition-colors hover:bg-paper hover:text-primary"
                           activeProps={{ className: "bg-paper text-primary" }}
                         >
                           {child.label}
