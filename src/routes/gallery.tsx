@@ -85,6 +85,29 @@ function Gallery() {
         </div>
 
         <div className="mt-20 border-t border-border pt-12">
+          <Label>Vietnam showroom archive</Label>
+          <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+            From our former in-house facility in Vietnam — the showroom where finished programs were
+            displayed before shipment.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SHOWROOM.map((s) => (
+              <figure key={s.caption}>
+                <img
+                  src={s.src}
+                  alt={s.caption}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
+                  {s.caption}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
           <p className="max-w-2xl leading-relaxed text-muted-foreground">
             Earlier chapters of the company — the Qingdao plant in China and our other own-factory
             years — are documented in the history archive.
