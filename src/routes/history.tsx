@@ -11,22 +11,6 @@ import floor3 from "@/assets/china-img_2814.jpg.asset.json";
 import floor4 from "@/assets/china-img_2815.jpg.asset.json";
 import opening from "@/assets/china-img_2816.jpg.asset.json";
 import aerial from "@/assets/china-img_2817.jpg.asset.json";
-import showroom1 from "@/assets/dsc_0772.jpg.asset.json";
-import showroom2 from "@/assets/dsc_0773.jpg.asset.json";
-import showroom3 from "@/assets/dsc_0774.jpg.asset.json";
-import showroom4 from "@/assets/dsc_0777.jpg.asset.json";
-import showroom5 from "@/assets/dsc_0778.jpg.asset.json";
-import showroom6 from "@/assets/dsc_0780.jpg.asset.json";
-
-const SHOWROOM = [
-  { src: showroom1.url, caption: "Showroom floor" },
-  { src: showroom2.url, caption: "Meeting room & sample display" },
-  { src: showroom3.url, caption: "Sample display" },
-  { src: showroom4.url, caption: "Product racks" },
-  { src: showroom5.url, caption: "OUTDOOR Products display" },
-  { src: showroom6.url, caption: "Camo program display" },
-];
-
 
 const ARCHIVE = [
   { src: gate.url, caption: "HanSei MFG. Corp., Qingdao — main gate" },
@@ -112,32 +96,6 @@ function History() {
                 />
                 <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
                   {a.caption}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-20 border-t border-border pt-12">
-          <Label>Archive — Vietnam showroom</Label>
-          <h2 className="mt-4 max-w-2xl font-display text-2xl font-bold text-primary">
-            The Vietnam years.
-          </h2>
-          <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
-            From our former in-house facility in Vietnam — the showroom where finished programs
-            were displayed before shipment.
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SHOWROOM.map((s) => (
-              <figure key={s.caption}>
-                <img
-                  src={s.src}
-                  alt={s.caption}
-                  loading="lazy"
-                  className="aspect-[4/3] w-full object-cover"
-                />
-                <figcaption className="mt-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-steel">
-                  {s.caption}
                 </figcaption>
               </figure>
             ))}
