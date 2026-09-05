@@ -40,25 +40,18 @@ export const Route = createFileRoute("/operations")({
 });
 
 const OPERATION = [
-  { src: vnExterior.url, caption: "Vietnam facility" },
   { src: floorOverview.url, caption: "Production floor overview" },
   { src: spreading.url, caption: "Fabric spreading" },
   { src: cutting.url, caption: "Automatic cutting" },
-  { src: dieCutting.url, caption: "Die cutting" },
   { src: sewingLine.url, caption: "Sewing line" },
   { src: sewingRoom.url, caption: "Sewing room" },
   { src: specialMachines.url, caption: "Special machines" },
-  { src: trimming.url, caption: "Trimming & sorting" },
+  { src: trimming.url, caption: "Shoulder strap padding" },
   { src: assembly.url, caption: "Assembly & finishing" },
   { src: materials.url, caption: "Material store" },
   { src: warehouse.url, caption: "Packing & export" },
   { src: sampleRoom.url, caption: "Sample room" },
   { src: showroom.url, caption: "Showroom" },
-  { src: office.url, caption: "Sourcing & QC office" },
-  { src: office1.url, caption: "Sourcing office" },
-  { src: office2.url, caption: "QC & merchandising office" },
-  { src: office3.url, caption: "Production planning office" },
-  { src: office4.url, caption: "Merchandising office" },
   { src: sampleSewing.url, caption: "Sample sewing" },
   { src: sampleWorkshop.url, caption: "Sample workshop" },
 ];
