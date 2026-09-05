@@ -59,8 +59,8 @@ export function SiteHeader() {
                 <Link
                   to={item.to}
                   className={cn(
-                    "relative flex items-center gap-1 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] transition-colors after:absolute after:bottom-0 after:left-0 after:right-full after:border-b after:border-brass after:transition-all hover:text-primary hover:after:right-0",
-                    active ? "text-primary after:right-0" : "text-steel"
+                    "flex items-center gap-1 py-1.5 text-[11.5px] font-semibold uppercase tracking-[0.2em] transition-colors hover:text-primary",
+                    active ? "text-primary" : "text-steel"
                   )}
                 >
                   {item.label}
