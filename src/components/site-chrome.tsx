@@ -223,7 +223,7 @@ export function SiteFooter() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+        <div className="flex items-center gap-5 text-xs text-muted-foreground">
           <span>© {new Date().getFullYear()} Capstone HS Inc. All rights reserved.</span>
           <a
             href="https://www.linkedin.com/company/capstonehsinc"
