@@ -230,9 +230,9 @@ export function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Capstone HS Inc. on LinkedIn"
-            className="transition-colors hover:text-primary"
+            className="group"
           >
-            <Linkedin className="h-[18px] w-[18px]" />
+            <LinkedInIcon className="h-5 w-5" />
           </a>
         </div>
       </div>
