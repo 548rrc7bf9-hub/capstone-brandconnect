@@ -1,6 +1,18 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { ChevronDown, Linkedin } from "lucide-react";
+import { ChevronDown } from "lucide-react";
+
+function LinkedInIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <rect width="24" height="24" rx="3" className="fill-foreground/70 transition-colors group-hover:fill-primary" />
+      <path
+        fill="#fff"
+        d="M6.94 8.5v9.56H4.06V8.5h2.88zM5.5 4.25a1.67 1.67 0 1 1 0 3.34 1.67 1.67 0 0 1 0-3.34zm4.44 4.25h2.76v1.3h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.91 3.44 4.4v5.34h-2.88v-4.74c0-1.13-.02-2.58-1.57-2.58-1.58 0-1.82 1.23-1.82 2.5v4.82H9.94V8.5z"
+      />
+    </svg>
+  );
+}
 import mark from "@/assets/capstone-hs-mark.png.asset.json";
 import { NAV, type NavItem } from "@/lib/site-content";
 import { cn } from "@/lib/utils";
@@ -218,9 +230,9 @@ export function SiteFooter() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Capstone HS Inc. on LinkedIn"
-            className="transition-colors hover:text-primary"
+            className="group"
           >
-            <Linkedin className="h-[18px] w-[18px]" />
+            <LinkedInIcon className="h-5 w-5" />
           </a>
         </div>
       </div>
