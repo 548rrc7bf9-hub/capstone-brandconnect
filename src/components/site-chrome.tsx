@@ -1,6 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Linkedin } from "lucide-react";
 import mark from "@/assets/capstone-hs-mark.png.asset.json";
 import { NAV, type NavItem } from "@/lib/site-content";
 import { cn } from "@/lib/utils";
