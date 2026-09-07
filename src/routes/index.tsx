@@ -7,7 +7,7 @@ import productsPhoto from "@/assets/products-backpacks.jpg.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Capstone HS Inc. — OEM Bag Manufacturing & Brand Licensing" },
+      { title: "Capstone HS Inc." },
       {
         name: "description",
         content:
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Capstone HS Inc. — OEM Bag Manufacturing & Brand Licensing",
+        content: "Capstone HS Inc.",
       },
       {
         property: "og:description",
