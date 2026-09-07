@@ -1,6 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState, type ReactNode } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Linkedin } from "lucide-react";
 import mark from "@/assets/capstone-hs-mark.png.asset.json";
 import { NAV, type NavItem } from "@/lib/site-content";
 import { cn } from "@/lib/utils";
@@ -211,9 +211,18 @@ export function SiteFooter() {
             </Link>
           ))}
         </nav>
-        <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Capstone HS Inc. — Torrance, CA · Ho Chi Minh City
-        </p>
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          <span>© {new Date().getFullYear()} Capstone HS Inc. All rights reserved.</span>
+          <a
+            href="https://www.linkedin.com/company/capstonehsinc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Capstone HS Inc. on LinkedIn"
+            className="transition-colors hover:text-primary"
+          >
+            <Linkedin className="h-[18px] w-[18px]" />
+          </a>
+        </div>
       </div>
     </footer>
   );
