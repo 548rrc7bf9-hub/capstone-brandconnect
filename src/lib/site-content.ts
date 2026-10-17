@@ -67,7 +67,7 @@ export const TIMELINE = [
   {
     year: "Today",
     title: "Torrance & Ho Chi Minh City",
-    body: "As an OEM supplier, sourcing, development and quality control remain with our own team, with cut-make-trim production carried out by trusted partner factories.",
+    body: "As an OEM manufacturer, sourcing, development and quality control remain with our own team, with cut-make-trim production carried out by trusted partner factories.",
   },
 ];
 
