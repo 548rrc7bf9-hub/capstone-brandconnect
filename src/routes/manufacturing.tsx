@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
 import { CAPABILITIES } from "@/lib/site-content";
 import exterior from "@/assets/factory-exterior.jpg.asset.json";
@@ -147,6 +147,12 @@ function Manufacturing() {
               Walmart shelves through those brand partners.
             </p>
           </div>
+          <Link
+            to="/trusted-by"
+            className="mt-8 inline-block border-b border-brass pb-1 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-primary hover:text-brass"
+          >
+            Brands we've manufactured for
+          </Link>
         </div>
       </section>
     </>
