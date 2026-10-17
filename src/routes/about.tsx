@@ -47,7 +47,7 @@ function About() {
             lifestyle brands and serving as the exclusive licensing agent across the Korean and Vietnamese markets.
           </p>
           <p>
-            Today we work as an OEM supplier: sourcing, development and quality are managed
+            Today we work as an OEM manufacturer: sourcing, development and quality are managed
             in-house, while production is carried out by partner factories we know and trust.
           </p>
           <div className="flex flex-wrap gap-6 pt-4">

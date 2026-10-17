@@ -85,7 +85,7 @@ function Manufacturing() {
           <Label>Our model</Label>
           <div className="mt-6 max-w-3xl space-y-4 text-lg leading-relaxed text-muted-foreground">
             <p>
-              We are the OEM supplier, not the factory. Every raw material is sourced and specified
+              We are the OEM manufacturer. Every raw material is sourced and specified
               by our team, and every BOM and costing decision is made in-house. We place CMT orders
               with partner factories we have vetted and worked with for years, then manage quality
               control, timelines and export directly.
