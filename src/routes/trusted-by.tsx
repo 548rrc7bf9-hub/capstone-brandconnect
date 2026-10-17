@@ -6,7 +6,9 @@ import logoCaseLogic from "@/assets/logo-case-logic.png.asset.json";
 import logoFieldline from "@/assets/logo-fieldline.webp.asset.json";
 import logoHerveChapelier from "@/assets/logo-herve-chapelier.svg.asset.json";
 import logoHummel from "@/assets/logo-hummel.svg.asset.json";
+import logoLandsEnd from "@/assets/logo-lands-end.jpg.asset.json";
 import logoLibertyMountain from "@/assets/logo-liberty-mountain.webp.asset.json";
+import logoOakley from "@/assets/logo-oakley.webp.asset.json";
 import logoOutdoorProducts from "@/assets/logo-outdoor-products.png.asset.json";
 import logoSingingRock from "@/assets/logo-singing-rock.webp.asset.json";
 import logoSpyder from "@/assets/logo-spyder.jpg.asset.json";
@@ -17,6 +19,8 @@ import logoYakPak from "@/assets/yakpak-logo.webp.asset.json";
 
 const TRUSTED_BY = [
   { src: logoBassPro.url, name: "Bass Pro Shops" },
+  { src: logoOakley.url, name: "Oakley" },
+  { src: logoLandsEnd.url, name: "Lands' End" },
   { src: logoHerveChapelier.url, name: "Hervé Chapelier" },
   { src: logoStoneIsland.url, name: "Stone Island", imgClass: "scale-110" },
   { src: logoSpyder.url, name: "Spyder" },
