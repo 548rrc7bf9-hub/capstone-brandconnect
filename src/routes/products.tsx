@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHead, Label } from "@/components/site-chrome";
 import backpacks from "@/assets/products-backpacks.jpg.asset.json";
 import duffel from "@/assets/products-duffel.jpg.asset.json";
@@ -86,6 +86,20 @@ function Products() {
               </figure>
             ))}
           </div>
+        </div>
+
+        <div className="mt-20 border-t border-border pt-12">
+          <Label>Who we built them for</Label>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            Each of these programs was produced for a recognized label — sports, outdoor and retail
+            brands that put their own name on the finished bag.
+          </p>
+          <Link
+            to="/trusted-by"
+            className="mt-6 inline-block border-b border-brass pb-1 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-primary hover:text-brass"
+          >
+            Brands we've manufactured for
+          </Link>
         </div>
       </section>
     </>
